@@ -1,0 +1,151 @@
+footer {
+  .footer_logo {
+    margin-top: 80px;
+    @include justify-center;
+    .label {
+      width: 48px;
+      height: 48px;
+      background-color: #78909c66;
+      border: none;
+      border-radius: 6px;
+      margin-right: 12px;
+      position: relative;
+      &:hover {
+        background-color: bg-darken(#78909c66);
+        transition: 1s;
+      }
+      img {
+        @include position-center;
+      }
+    }
+    .footer_name h2 {
+      font: 34px $font-bai;
+      font-weight: bold;
+      line-height: 38px;
+      letter-spacing: -0.02em;
+    }
+  }
+  .footer_menu {
+    margin-top: 52px;
+    height: 64px;
+    ul {
+      @include justify-center;
+      list-style: none;
+      li,
+      li a {
+        font: 20px $font-rob;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        margin-right: 10px;
+        align-items: baseline;
+        text-decoration: none;
+        color: #000;
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6),
+        &:nth-child(8),
+        &:nth-child(10),
+        &:nth-child(12) {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+  .footer_subscribe {
+    margin-top: 40px;
+    @include justify-center;
+    form {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 12px;
+      min-width: 564px;
+      height: 60px;
+      background: #fff;
+      box-shadow: 0px 20px 32px rgba(8, 35, 48, 0.06),
+        0px 8px 16px rgba(8, 35, 48, 0.1);
+      border-radius: 4px;
+      input[type="text"] {
+        border: none;
+        &::placeholder {
+          font: 16px $font-pop;
+          line-height: 150%;
+          align-items: center;
+          letter-spacing: 0.25px;
+          color: #919699;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        border: none;
+        width: 172px;
+        height: 44px;
+        background: #c6cacc;
+        border-radius: 4px;
+        font: 20px $font-pop;
+        font-weight: bold;
+        line-height: 160%;
+        letter-spacing: 0.15px;
+        color: #fff;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          background-color: bg-darken(#c6cacc);
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .footer_social {
+    margin-top: 80px;
+    @include justify-center;
+    a {
+      text-decoration: none;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      color: #fff;
+      margin-right: 24px;
+      width: 56px;
+      height: 56px;
+      display: block;
+      position: relative;
+      i.fab {
+        font-size: 2em;
+        @include position-center;
+      }
+      &:hover {
+        background-color: #78909c;
+        transition: 0.5s;
+      }
+    }
+    &-facebook a {
+      background-color: #4267b2;
+    }
+    &-twitter a {
+      background-color: #1da1f2;
+    }
+    &-google a {
+      background-color: #ea4335;
+    }
+    &-instagram a {
+      background-color: #fc6a50;
+    }
+  }
+  .footer_info {
+    margin: 40px auto 80px;
+    max-width: 366px;
+    p {
+      font: 12px $font-rob;
+      line-height: 133%;
+      text-align: center;
+      letter-spacing: 0.4px;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bolder;
+      }
+    }
+  }
+}

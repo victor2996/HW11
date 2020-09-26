@@ -1,0 +1,27 @@
+header {
+    .header_logo {
+        @include justify-center;
+        .label {
+            width: 48px;
+            height: 48px;
+            background-color: #78909c66;
+            border: none;
+            border-radius: 6px;
+            margin-right: 12px;
+            position: relative;
+            &:hover {
+                background-color: bg-darken(#78909c66);
+                transition: 1s;
+            }
+            img {
+                @include position-center;
+            }
+        }
+    }
+    .header_name h2 {
+        font: 34px $font-bai;
+        font-weight: bold;
+        line-height: 38px;
+        letter-spacing: -0.02em;
+    }
+}
